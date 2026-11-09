@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jenny &amp; Raymond · July 16, 2027</title>
+  <!-- Keep the site out of search engines; guests with the link can still open it -->
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 20.5s-7.5-4.6-9.2-9.4C1.6 7.6 3.7 4.5 7 4.5c2.1 0 3.6 1.2 5 3 1.4-1.8 2.9-3 5-3 3.3 0 5.4 3.1 4.2 6.6-1.7 4.8-9.2 9.4-9.2 9.4z' fill='none' stroke='%23c8383c' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <meta name="description" content="You're invited to the wedding of Jenny &amp; Raymond — July 16, 2027 at the UBC Boathouse in Richmond, BC, Canada." />
+  <!-- Link previews (iMessage, WhatsApp, etc.) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jennyxraymond.github.io/" />
+  <meta property="og:title" content="Jenny &amp; Raymond · July 16, 2027" />
+  <meta property="og:description" content="UBC Boathouse · Richmond, BC, Canada" />
+  <meta property="og:image" content="https://jennyxraymond.github.io/images/share.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Illustration of Jenny and Raymond hugging, with their names, July 16, 2027 and UBC Boathouse, Richmond, BC, Canada" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Allison&family=Caveat:wght@500;700&family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Reusable doodle pieces -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="heart" viewBox="0 0 24 24">
+        <path d="M12 20.5C4.5 15 1.2 10 3.4 6 5.6 2.3 10 3.2 12 7.2 13.9 3.1 18.6 2.2 20.7 6c2.1 4-1.6 9.2-8.9 14.8" />
+      </symbol>
+      <symbol id="sparkle" viewBox="0 0 24 24">
+        <path d="M12 2v6M12 16v6M2 12h6M16 12h6" />
+      </symbol>
+    </defs>
+  </svg>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <header class="section hero">
+
+      <h1 class="names reveal">
+        <span class="names__one">Jenny</span>
+        <span class="amp">&amp;</span>
+        <span class="names__two">Raymond</span>
+      </h1>
+
+      <div class="hero__art reveal">
+        <picture>
+          <source srcset="images/couple.webp" type="image/webp" />
+          <img src="images/couple.png" width="725" height="1189" fetchpriority="high" alt="Illustration of Jenny and Raymond laughing in a hug" />
+        </picture>
+      </div>
+
+      <!-- Days left until the wedding, filled in by script.js -->
+      <p class="countdown reveal" id="countdown" hidden>
+        <svg class="countdown__heart" viewBox="0 0 24 24" aria-hidden="true"><use href="#heart" /></svg>
+        <span class="countdown__num"></span> <span class="countdown__label"></span>
+      </p>
+    </header>
+
+    <!-- Everything below the hero. On laptops the side photos are placed within this area. -->
+    <div class="page-body">
+
+    <!-- ============ DATE & PLACE ============ -->
+    <section class="section" id="details">
+      <h2 class="script stacked reveal">
+        <span>Date</span>
+        <span class="amp">&amp;</span>
+        <span class="indent">Place</span>
+      </h2>
+
+      <ul class="facts reveal">
+        <li>
+          <svg class="ink icon" viewBox="0 0 40 40" aria-hidden="true">
+            <rect x="5" y="8" width="30" height="27" rx="4" />
+            <path d="M5 16h30M13 4v8M27 4v8" />
+            <path d="M12 22h2M19 22h2M26 22h2M12 28h2M19 28h2" class="dots" />
+          </svg>
+          <time datetime="2027-07-16">JULY 16, 2027</time>
+        </li>
+        <li>
+          <svg class="ink icon" viewBox="0 0 40 40" aria-hidden="true">
+            <circle cx="20" cy="20" r="15" />
+            <path d="M20 11v9l6 4" />
+          </svg>
+          <span>TIME TO COME</span>
+        </li>
+        <li>
+          <svg class="ink icon" viewBox="0 0 40 40" aria-hidden="true">
+            <path d="M20 36s-11-11-11-19a11 11 0 0 1 22 0c0 8-11 19-11 19z" />
+            <circle cx="20" cy="17" r="4" />
+          </svg>
+          <span>UBC BOATHOUSE<small class="facts__sub">RICHMOND, BC, CANADA</small></span>
+        </li>
+      </ul>
+
+      <!-- Replace the link with your venue's Google/Apple Maps URL -->
+      <a class="btn reveal" href="https://www.google.com/maps/search/?api=1&query=UBC+Boathouse+Richmond+BC+Canada" target="_blank" rel="noopener">
+        <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 21s-7-7-7-12a7 7 0 0 1 14 0c0 5-7 12-7 12z" /><circle cx="12" cy="9" r="2.5" />
+        </svg>
+        Open map
+        <svg class="btn__icon btn__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h17M14 6l6 6-6 6" /></svg>
+      </a>
+    </section>
+
+    <!-- ============ PROPOSAL ============ -->
+    <section class="section" id="proposal">
+      <h2 class="script stacked reveal">
+        <span>She said</span>
+        <span class="indent">Yes!<svg class="heart-mark" viewBox="0 0 24 24" aria-hidden="true"><use href="#heart" /></svg></span>
+      </h2>
+
+      <div class="proposal">
+        <figure class="polaroid polaroid--big reveal">
+          <img src="images/photos/proposal-2.webp" width="720" height="900" loading="lazy" decoding="async" alt="Raymond down on one knee proposing to Jenny by a mountain lake" />
+        </figure>
+        <figure class="polaroid polaroid--big reveal">
+          <img src="images/photos/proposal-1.webp" width="720" height="900" loading="lazy" decoding="async" alt="Jenny and Raymond laughing in a hug after the proposal, mountains behind them" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ PHOTOS ============ -->
+    <!-- Laptops: these sit in the side margins (odd = left, even = right); --y is how far down the page.
+         Phones: a swipeable strip. To add a photo, put a square JPG in images/photos/ and copy a <figure>. -->
+    <section class="section" id="moments">
+      <h2 class="script stacked reveal">
+        <span>Our</span>
+        <span class="indent">Moments<svg class="heart-mark" viewBox="0 0 24 24" aria-hidden="true"><use href="#heart" /></svg></span>
+      </h2>
+
+      <div class="polaroids">
+        <figure class="polaroid reveal" style="--y: 2%">
+          <img src="images/photos/lobster.webp" width="600" height="600" loading="lazy" decoding="async" alt="Jenny and Raymond holding up a giant lobster at a restaurant" />
+        </figure>
+        <figure class="polaroid reveal" style="--y: 7.5%">
+          <img src="images/photos/couch.webp" width="600" height="600" loading="lazy" decoding="async" alt="Jenny and Raymond sitting on an orange couch outdoors" />
+        </figure>
+        <figure class="polaroid reveal" style="--y: 13%">
+          <img src="images/photos/balloons.webp" width="600" height="600" loading="lazy" decoding="async" alt="Jenny and Raymond in front of colourful hot air balloons" />
+        </figure>
+        <figure class="polaroid reveal" style="--y: 18.5%">
+          <img src="images/photos/pup-bandana.webp" width="600" height="600" loading="lazy" decoding="async" alt="A fluffy black-and-white dog in a red bandana, smiling" />
+        </figure>
+        <figure class="polaroid reveal" style="--y: 24%">
+          <img src="images/photos/theatre.webp" width="600" height="600" loading="lazy" decoding="async" alt="Raymond and Jenny smiling in their theatre seats before a show" />
+        </figure>
+        <figure class="polaroid reveal" style="--y: 29.5%">
+          <img src="images/photos/atv.webp" width="600" height="600" loading="lazy" decoding="async" alt="Raymond and Jenny riding an ATV through the forest" />
+        </figure>
+        <figure class="polaroid reveal" style="--y: 35%">
+          <img src="images/photos/lake.webp" width="600" height="600" loading="lazy" decoding="async" alt="Raymond and Jenny taking a selfie by a lake" />
+        </figure>
+        <figure class="polaroid reveal" style="--y: 40.5%">
+          <img src="images/photos/snow.webp" width="600" height="600" loading="lazy" decoding="async" alt="Jenny and Raymond bundled up in front of snowy mountains" />
+        </figure>
+        <figure class="polaroid reveal" style="--y: 46%">
+          <img src="images/photos/pup-stick.webp" width="600" height="600" loading="lazy" decoding="async" alt="The black-and-white dog lying on the grass chewing a stick" />
+        </figure>
+        <figure class="polaroid reveal" style="--y: 51.5%">
+          <img src="images/photos/concert.webp" width="600" height="600" loading="lazy" decoding="async" alt="Raymond and Jenny smiling at a concert" />
+        </figure>
+        <figure class="polaroid reveal" style="--y: 57%">
+          <img src="images/photos/waterfront.webp" width="600" height="600" loading="lazy" decoding="async" alt="Jenny and Raymond laughing on a sunny waterfront" />
+        </figure>
+        <figure class="polaroid reveal" style="--y: 62.5%">
+          <img src="images/photos/birthday.webp" width="600" height="600" loading="lazy" decoding="async" alt="Raymond smiling behind a birthday dessert with a sparkler" />
+        </figure>
+        <figure class="polaroid reveal" style="--y: 68%">
+          <img src="images/photos/snow-day.webp" width="600" height="600" loading="lazy" decoding="async" alt="Raymond and Jenny out in falling snow" />
+        </figure>
+        <figure class="polaroid reveal" style="--y: 73.5%">
+          <img src="images/photos/dinner.webp" width="600" height="600" loading="lazy" decoding="async" alt="Jenny and Raymond dressed up at a dinner" />
+        </figure>
+        <figure class="polaroid reveal" style="--y: 79%">
+          <img src="images/photos/selfie.webp" width="600" height="600" loading="lazy" decoding="async" alt="Raymond and Jenny taking a selfie outdoors" />
+        </figure>
+        <figure class="polaroid reveal" style="--y: 84.5%">
+          <img src="images/photos/city.webp" width="600" height="600" loading="lazy" decoding="async" alt="Raymond and Jenny taking a selfie in the city" />
+        </figure>
+        <figure class="polaroid reveal" style="--y: 90%">
+          <img src="images/photos/pup-eyes.webp" width="600" height="600" loading="lazy" decoding="async" alt="Close-up of the black-and-white dog looking up with big eyes" />
+        </figure>
+      </div>
+      <p class="swipe-hint" aria-hidden="true">swipe for more &rarr;</p>
+    </section>
+
+    <!-- ============ SCHEDULE ============ -->
+    <!-- Hidden for the save-the-date stage: remove "hidden" to bring this section back. -->
+    <section class="section" id="schedule" hidden>
+      <h2 class="script reveal">Schedule<svg class="heart-mark" viewBox="0 0 24 24" aria-hidden="true"><use href="#heart" /></svg></h2>
+
+      <div class="coming-soon reveal">
+        <svg class="ink" viewBox="0 0 120 110" aria-hidden="true">
+          <g transform="rotate(-18 40 60)">
+            <path d="M30 22h18l-2 34q-7 8-14 0z" />
+            <path d="M39 60v28M31 89h16" />
+            <path d="M32 34h14" class="thin" />
+          </g>
+          <g transform="rotate(18 80 60)">
+            <path d="M71 22h18l-2 34q-7 8-14 0z" />
+            <path d="M80 60v28M72 89h16" />
+            <path d="M73 34h14" class="thin" />
+          </g>
+          <path d="M60 14v-8M50 16l-5-6M70 16l5-6" />
+          <circle cx="38" cy="44" r="1.6" class="fill" /><circle cx="44" cy="38" r="1.3" class="fill" />
+          <circle cx="80" cy="44" r="1.6" class="fill" /><circle cx="76" cy="38" r="1.3" class="fill" />
+          <use href="#heart" x="94" y="8" width="16" height="16" class="red" />
+        </svg>
+        <p class="tag coming-soon__tag">Coming soon!</p>
+        <p class="coming-soon__text">We're still finalizing the plans for the day.<br />Check back soon for the full schedule.</p>
+      </div>
+
+      <!-- Timeline is ready for later: fill in the times and remove "hidden" to show it. -->
+      <ol class="timeline" hidden>
+        <!-- ceremony: text left, art right -->
+        <li class="tl-row reveal">
+          <div class="tl-text"><strong>16:00</strong><span>ceremony</span></div>
+          <div class="tl-art">
+            <svg class="ink" viewBox="0 0 120 110" aria-hidden="true">
+              <!-- arch -->
+              <path d="M28 104V52a32 32 0 0 1 64 0v52" />
+              <path d="M20 104h80" />
+              <!-- flowers on arch -->
+              <circle cx="32" cy="38" r="5" /><circle cx="44" cy="25" r="5" /><circle cx="60" cy="20" r="6" />
+              <circle cx="76" cy="25" r="5" /><circle cx="88" cy="38" r="5" />
+              <path d="M37 32c3 1 4 3 4 6M52 20c2-3 4-4 7-4M68 21c3 0 5 1 6 3M81 31c2 1 3 3 3 5" class="thin" />
+              <use href="#heart" x="50" y="58" width="20" height="20" class="red" />
+            </svg>
+          </div>
+        </li>
+
+        <!-- cocktail: art left, text right -->
+        <li class="tl-row tl-row--flip reveal">
+          <div class="tl-text"><strong>17:00</strong><span>cocktail hour</span></div>
+          <div class="tl-art">
+            <svg class="ink" viewBox="0 0 120 110" aria-hidden="true">
+              <g transform="rotate(-18 40 60)">
+                <path d="M30 22h18l-2 34q-7 8-14 0z" />
+                <path d="M39 60v28M31 89h16" />
+                <path d="M32 34h14" class="thin" />
+              </g>
+              <g transform="rotate(18 80 60)">
+                <path d="M71 22h18l-2 34q-7 8-14 0z" />
+                <path d="M80 60v28M72 89h16" />
+                <path d="M73 34h14" class="thin" />
+              </g>
+              <path d="M60 14v-8M50 16l-5-6M70 16l5-6" />
+              <circle cx="38" cy="44" r="1.6" class="fill" /><circle cx="44" cy="38" r="1.3" class="fill" />
+              <circle cx="80" cy="44" r="1.6" class="fill" /><circle cx="76" cy="38" r="1.3" class="fill" />
+              <use href="#heart" x="94" y="8" width="16" height="16" class="red" />
+            </svg>
+          </div>
+        </li>
+
+        <!-- dinner -->
+        <li class="tl-row reveal">
+          <div class="tl-text"><strong>18:00</strong><span>dinner</span></div>
+          <div class="tl-art">
+            <svg class="ink" viewBox="0 0 120 110" aria-hidden="true">
+              <circle cx="60" cy="58" r="30" />
+              <circle cx="60" cy="58" r="20" class="thin" />
+              <!-- fork -->
+              <path d="M16 30v18a5 5 0 0 0 10 0V30M21 30v16M21 53v40" />
+              <!-- knife -->
+              <path d="M100 93V30c-7 4-8 16-8 26h8" />
+              <use href="#heart" x="51" y="49" width="18" height="18" class="red" />
+            </svg>
+          </div>
+        </li>
+
+        <!-- party -->
+        <li class="tl-row tl-row--flip reveal">
+          <div class="tl-text"><strong>19:00</strong><span>party</span></div>
+          <div class="tl-art">
+            <svg class="ink" viewBox="0 0 120 110" aria-hidden="true">
+              <!-- disco ball -->
+              <path d="M74 4v16" class="thin" />
+              <circle cx="74" cy="42" r="22" />
+              <path d="M52 42h44M55 31h38M55 53h38M74 20v44" class="thin" />
+              <path d="M74 20c-10 6-10 38 0 44M74 20c10 6 10 38 0 44" class="thin" />
+              <!-- music notes -->
+              <path d="M18 92V66l22-6v26" />
+              <path d="M18 70l22-6" />
+              <ellipse cx="13" cy="92" rx="6" ry="4.5" class="fill" transform="rotate(-20 13 92)" />
+              <ellipse cx="35" cy="86" rx="6" ry="4.5" class="fill" transform="rotate(-20 35 86)" />
+              <use href="#sparkle" x="98" y="72" width="14" height="14" />
+              <use href="#sparkle" x="46" y="14" width="10" height="10" />
+              <use href="#heart" x="82" y="84" width="16" height="16" class="red" />
+            </svg>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ DRESS CODE ============ -->
+    <section class="section" id="dress-code">
+      <h2 class="script stacked reveal">
+        <span>Dress</span>
+        <span class="indent">Code<svg class="heart-mark" viewBox="0 0 24 24" aria-hidden="true"><use href="#heart" /></svg></span>
+      </h2>
+
+      <div class="dress-art reveal">
+        <picture>
+          <source srcset="images/dress-code.webp" type="image/webp" />
+          <img src="images/dress-code.png" width="735" height="1227" loading="lazy" decoding="async" alt="Illustration of Jenny and Raymond walking arm in arm, in a suit and a midi dress" />
+        </picture>
+        <!-- Doodles drawn on top, in the same coordinates as the image -->
+        <svg class="ink dress-art__doodles" viewBox="0 0 735 1227" aria-hidden="true">
+          <use href="#heart" x="590" y="30" width="64" height="64" class="red" />
+          <use href="#heart" x="0" y="150" width="46" height="46" class="red" />
+          <use href="#sparkle" x="36" y="22" width="32" height="32" />
+          <use href="#sparkle" x="682" y="500" width="44" height="44" />
+          <use href="#sparkle" x="6" y="880" width="34" height="34" />
+        </svg>
+      </div>
+
+      <p class="attire reveal">Cocktail attire</p>
+
+      <div class="coming-soon reveal" id="palette-soon">
+        <p class="tag coming-soon__tag">Colour palette coming soon!</p>
+        <p class="coming-soon__text">We're still picking our colours.<br />Check back soon.</p>
+      </div>
+
+      <!-- Palette and note are ready for later: update the colours and remove "hidden" to show them. -->
+      <ul class="palette reveal" aria-label="Colour palette" hidden>
+        <li style="--c:#F5F1E6" title="Ivory"><span class="sr-only">Ivory</span></li>
+        <li style="--c:#D8C7A6" title="Sand"><span class="sr-only">Sand</span></li>
+        <li style="--c:#5F6B48" title="Olive"><span class="sr-only">Olive</span></li>
+        <li style="--c:#1C1B19" title="Black"><span class="sr-only">Black</span></li>
+        <li style="--c:#B9B0A6" title="Taupe"><span class="sr-only">Taupe</span></li>
+      </ul>
+
+      <p class="tag tag--dress reveal" hidden>Look good,<br />Feel good,<br />Celebrate<br />with us</p>
+    </section>
+
+    <!-- ============ RSVP ============ -->
+    <!-- Hidden for the save-the-date stage: remove "hidden" to bring this section back. -->
+    <section class="section" id="rsvp" hidden>
+      <h2 class="script reveal">Rsvp</h2>
+
+      <div class="rsvp-card reveal" aria-hidden="true">
+        <svg class="heart-float" viewBox="0 0 24 24"><use href="#heart" /></svg>
+        <p class="rsvp-card__q">will you<br />be there?</p>
+        <p class="rsvp-card__opt"><span class="box box--checked"></span>Yes!</p>
+        <p class="rsvp-card__opt"><span class="box"></span>Sorry,<br />can't make it</p>
+      </div>
+
+      <!-- Save-the-date stage: remove this block and the `hidden` on the form below to open RSVPs -->
+      <div class="coming-soon reveal">
+        <p class="tag coming-soon__tag">Invitation to follow!</p>
+        <p class="coming-soon__text">RSVPs will open when our formal invitations go out.<br />For now, please save the date!</p>
+      </div>
+
+      <form class="rsvp-form rsvp-panel reveal" id="rsvp-form" novalidate hidden>
+        <div class="field">
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" placeholder="First and last name" autocomplete="name" required />
+          <p class="field-error">Please tell us your name.</p>
+        </div>
+
+        <fieldset class="field" id="attending-field">
+          <legend>Will you be joining us?</legend>
+          <div class="choice-group">
+            <label class="choice">
+              <input type="radio" name="attending" value="yes" required />
+              <span class="choice__box">
+                <svg class="choice__icon choice__icon--heart" viewBox="0 0 24 24" aria-hidden="true"><use href="#heart" /></svg>
+                <span class="choice__title">Joyfully accepts</span>
+                <span class="choice__sub">Wouldn't miss it</span>
+              </span>
+            </label>
+            <label class="choice">
+              <input type="radio" name="attending" value="no" />
+              <span class="choice__box">
+                <svg class="choice__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2" /><path d="M3.5 7l8.5 6.5L20.5 7" /></svg>
+                <span class="choice__title">Regretfully declines</span>
+                <span class="choice__sub">Sending love</span>
+              </span>
+            </label>
+          </div>
+          <p class="field-error">Please let us know if you can make it.</p>
+        </fieldset>
+
+        <!-- Follow-up questions: only shown after "Joyfully accepts" -->
+        <div class="collapsible is-collapsed" id="attending-only" inert>
+          <div>
+            <fieldset class="field" id="plus-one-field">
+              <legend>Will you bring a plus one?</legend>
+              <div class="pill-group">
+                <label class="pill"><input type="radio" name="plus_one" value="yes" /><span>Yes</span></label>
+                <label class="pill"><input type="radio" name="plus_one" value="no" /><span>No, just me</span></label>
+              </div>
+              <p class="field-error">Please let us know if you're bringing someone.</p>
+            </fieldset>
+
+            <!-- Only shown when bringing a plus one -->
+            <div class="collapsible is-collapsed" id="plus-one-only" inert>
+              <div>
+                <div class="field" id="plus-one-name-field">
+                  <label for="plus_one_name">Your plus one's name</label>
+                  <input id="plus_one_name" name="plus_one_name" type="text" placeholder="First and last name" autocomplete="off" />
+                  <p class="field-error">Please tell us who you're bringing.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="dietary">Dietary needs or allergies <span class="hint">optional</span></label>
+              <input id="dietary" name="dietary" type="text" placeholder="e.g. vegetarian, nut allergy" />
+            </div>
+
+            <div class="field">
+              <label for="song">A song that gets you dancing <span class="hint">optional</span></label>
+              <input id="song" name="song" type="text" placeholder="Song and artist" />
+            </div>
+          </div>
+        </div>
+
+        <p class="form-msg" id="form-msg" role="status" aria-live="polite"></p>
+
+        <button class="btn btn--wide" type="submit">
+          Send RSVP
+          <svg class="btn__icon btn__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h17M14 6l6 6-6 6" /></svg>
+        </button>
+      </form>
+    </section>
+
+    <!-- ============ MORE TO COME ============ -->
+    <!-- Combined note for the save-the-date stage. Delete it once the schedule and RSVP are back. -->
+    <section class="section more-soon" id="more-soon">
+      <div class="coming-soon reveal">
+        <svg class="ink" viewBox="0 0 120 110" aria-hidden="true">
+          <g transform="rotate(-18 40 60)">
+            <path d="M30 22h18l-2 34q-7 8-14 0z" />
+            <path d="M39 60v28M31 89h16" />
+            <path d="M32 34h14" class="thin" />
+          </g>
+          <g transform="rotate(18 80 60)">
+            <path d="M71 22h18l-2 34q-7 8-14 0z" />
+            <path d="M80 60v28M72 89h16" />
+            <path d="M73 34h14" class="thin" />
+          </g>
+          <path d="M60 14v-8M50 16l-5-6M70 16l5-6" />
+          <circle cx="38" cy="44" r="1.6" class="fill" /><circle cx="44" cy="38" r="1.3" class="fill" />
+          <circle cx="80" cy="44" r="1.6" class="fill" /><circle cx="76" cy="38" r="1.3" class="fill" />
+          <use href="#heart" x="94" y="8" width="16" height="16" class="red" />
+        </svg>
+        <p class="tag coming-soon__tag">More details to come!</p>
+        <p class="coming-soon__text">The schedule and RSVP will arrive<br />with our formal invitation.<br />For now, please save the date!</p>
+      </div>
+    </section>
+
+    <!-- ============ THANK YOU ============ -->
+    <footer class="section thanks">
+      <h2 class="script stacked thanks__title reveal">
+        <span>Thank</span>
+        <span class="indent">You!<svg class="heart-mark" viewBox="0 0 24 24" aria-hidden="true"><use href="#heart" /></svg></span>
+      </h2>
+      <p class="tag tag--thanks reveal">See you soon!</p>
+
+      <svg class="ink thanks__art reveal" viewBox="0 0 260 80" aria-hidden="true">
+        <path d="M10 60c30-30 50 10 80-10s40-30 70-10 40 20 70-10" stroke-dasharray="2 7" />
+        <use href="#heart" x="226" y="10" width="26" height="26" class="red" />
+        <use href="#heart" x="84" y="30" width="14" height="14" class="red" />
+        <use href="#sparkle" x="150" y="54" width="12" height="12" />
+      </svg>
+
+      <p class="signoff">Jenny &amp; Raymond · 2027.07.16</p>
+    </footer>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

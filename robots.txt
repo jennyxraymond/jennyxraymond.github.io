@@ -1,0 +1,3 @@
+# Private wedding site: please don't crawl, index or train on any of it.
+User-agent: *
+Disallow: /
